@@ -1,4 +1,4 @@
-resource "aws_instance" "this" {
+resource "aws_instance" "this" {      ########### EC2 MODULE
   ami                    = var.ami_id
   instance_type          = "t3.small"
   vpc_security_group_ids = [var.sg_id]
